@@ -28,7 +28,7 @@ document.addEventListener('input', function () {
     if (searchTerm === '') {
         resultPlaylist.classList.add('hidden');
         resultArtist.classList.remove('hidden');
-        return
+        return;
     }
     
     requestApi(searchTerm);
